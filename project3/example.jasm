@@ -1,0 +1,18 @@
+class example
+{
+	field static int c
+	method public static int add(int, int)
+	max_stack 15
+	max_locals 15
+	{
+		iload 0
+		iload 1
+		iadd
+		ireturn
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		getstatic int example.a
+		invokestatic int example.add(int, int)

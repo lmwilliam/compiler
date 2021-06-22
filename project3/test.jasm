@@ -1,0 +1,31 @@
+class test
+{
+	field static int c = 1
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		ifeq L0
+		getstatic int test.a
+		isub
+		ifgt L1
+		iconst_0
+		goto L2
+L1:
+		iconst_1
+L2:
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int test.c
+		ineg
+		invokevirtual void java.io.PrintStream.print(int)
+		goto L3
+L0:
+nop
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int test.c
+		invokevirtual void java.io.PrintStream.print(int)
+L3:
+nop
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println(java.lang.String)
+}

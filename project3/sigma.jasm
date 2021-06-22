@@ -1,0 +1,42 @@
+class sigma
+{
+	field static int sum
+	field static int index
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		putstatic int sigma.index
+		putstatic int sigma.sum
+L0:
+nop
+		getstatic int sigma.index
+		getstatic int sigma.n
+		isub
+		ifle L1
+		iconst_0
+		goto L2
+L1:
+		iconst_1
+L2:
+		ifeq L3
+		getstatic int sigma.sum
+		getstatic int sigma.index
+		iadd
+		putstatic int sigma.sum
+		getstatic int sigma.index
+		sipush 1
+		iadd
+		putstatic int sigma.index
+		goto L0
+L3:
+nop
+		getstatic java.io.PrintStream java.lang.System.out
+		ldc "The result is "
+		invokevirtual void java.io.PrintStream.print(java.lang.String)
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int sigma.sum
+		invokevirtual void java.io.PrintStream.println(int)
+		return
+	}
+}
